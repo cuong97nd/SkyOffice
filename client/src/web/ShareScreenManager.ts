@@ -10,7 +10,20 @@ export default class ShareScreenManager {
 
   constructor(private userId: string) {
     const sanatizedId = this.makeId(userId)
-    this.myPeer = new Peer(sanatizedId)
+    this.myPeer = new Peer(sanatizedId,{
+      config: {
+        iceServers: [
+          {
+            urls: 'stun:stun.l.google.com:19302'
+          },
+          {
+            'urls': 'turn:18.183.105.171:3478',
+            'username': 'admin',
+            'credential': 'unisax'
+          },
+        ]
+      }
+    })
     this.myPeer.on('error', (err) => {
       console.log('ShareScreenWebRTC err.type', err.type)
       console.error('ShareScreenWebRTC', err)
