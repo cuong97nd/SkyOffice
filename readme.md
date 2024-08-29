@@ -9,7 +9,7 @@ An immersive virtual office - Winner of [2021 Monte Jade Innovation Competition]
 - 🙌 Get latest updates? Follow our [Twitter](https://twitter.com/SkyOfficeApp).
 - 💕 Love this project? Consider [buy me a coffee](https://www.buymeacoffee.com/skyoffice).
 
-SkyOffice works on all PC browsers (mobile browsers are currently not supported)
+1 SkyOffice works on all PC browsers (mobile browsers are currently not supported)
 
 ## Built with
 
